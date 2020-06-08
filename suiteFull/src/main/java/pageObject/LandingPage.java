@@ -7,7 +7,6 @@ import org.openqa.selenium.WebElement;
 public class LandingPage {
 
 	private WebDriver driver;
-
 	private By signin = By.xpath("//span[contains(text(),'Login')]");
 	private By title= By.xpath("//h2[contains(text(),'Featured Courses')]");
 

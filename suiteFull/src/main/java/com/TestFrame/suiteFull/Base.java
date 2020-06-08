@@ -21,21 +21,18 @@ public class Base {
 
 	protected WebDriver driver;
 	protected Properties properties;
-	
-	//log to external file
 	private static Logger log = LogManager.getLogger(Base.class.getName());
+
 	public WebDriver initializeDriver() throws IOException {
 
 		properties = new Properties();
 		FileInputStream input = null;
 
 		try {
-			
-			
-			//loading data dynamically form external file
-			input = new FileInputStream(new File(System.getProperty("user.dir")+"/src/main/resources/com/TestFrame/suiteFull/data.properties"));
+			// loading data dynamically form external file
+			input = new FileInputStream(new File(
+					System.getProperty("user.dir") + "/src/main/resources/com/TestFrame/suiteFull/data.properties"));
 			log.info("Resource File located");
-			
 		} catch (FileNotFoundException e) {
 
 			e.printStackTrace();
@@ -43,64 +40,64 @@ public class Base {
 
 		properties.load(input);
 
-		String browserName =null;
-		if(System.getProperty("browser")!=null)
-		{
-			//from MVN parameterizing with Jenkins
-			 browserName  =System.getProperty("browser");
+		String browserName = null;
+		if (System.getProperty("browser") != null) {
+			// from MVN parameterizing with Jenkins
+			browserName = System.getProperty("browser");
+		} else {
+			// from the property file
+			browserName = properties.getProperty("browser");
 		}
-		else
-		{
-			//from the property file
-			 browserName = properties.getProperty("browser");
-		}
-		
-		
 
+		browswerSelection(browserName);
+
+		log.info("Maximizing browser");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); // waiting for a period of 10seconds before
+																			// failing the test.
+		return driver;
+	}
+
+	public void browswerSelection(String browserName) {
+
+		 String systemPath =System.getProperty("user.dir");
 		if ("chrome".equalsIgnoreCase(browserName)) {
 
-			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/main/resources/browserDrivers/chromedriver");
-
+			
+			System.setProperty("webdriver.chrome.driver",systemPath+ "/src/main/resources/browserDrivers/chromedriver");
 			driver = new ChromeDriver();
-			log.info("Running on Test on browser "+browserName);
+			log.info("Running on Test on browser " + browserName);
 
 		} else if ("firefox".equalsIgnoreCase(browserName)) {
-			
-			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"/src/main/resources/browserDrivers/geckodriver");
+
+			System.setProperty("webdriver.gecko.driver",systemPath + "/src/main/resources/browserDrivers/geckodriver");
 			driver = new FirefoxDriver();
-			
-			log.info("Running on Test on browser "+browserName);
-			
+			log.info("Running on Test on browser " + browserName);
+
 		} else if ("IE".equalsIgnoreCase("IE")) {
-			
-			System.setProperty("webdriver.ie.driver",System.getProperty("user.dir")+"/src/main/resources/browserDrivers/IEDriverServer.exe");
+
+			System.setProperty("webdriver.ie.driver",systemPath+ "/src/main/resources/browserDrivers/IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
-			
-			log.info("Running on Test on browser "+browserName);
+			log.info("Running on Test on browser " + browserName);
 
 		} else {
-
+			
 			log.fatal("Something went wrong with the browswer");
 			throw new RuntimeException("No such driver/browser name found");
 		}
 
-		log.info("Maximizing browser");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); // waiting for a period of 10seconds before failing the test.
-		
-		return driver;
 	}
 
-	public String getScreenShotPath(String methodName,WebDriver driver) throws IOException
-	{
-		// Taking a screenshot 
-		TakesScreenshot screen=(TakesScreenshot)driver;
-		File source =screen.getScreenshotAs(OutputType.FILE);
-		String destinationPath =System.getProperty("user.dir")+"/reports/"+methodName+".png";// path to save scrrenshots
-		FileUtils.copyFile(source,new File(destinationPath));//move the actual file to the distation
-		
+	public String getScreenShotPath(String methodName, WebDriver driver) throws IOException {
+		// Taking a screenshot
+		TakesScreenshot screen = (TakesScreenshot) driver;
+		File source = screen.getScreenshotAs(OutputType.FILE);
+		String destinationPath = System.getProperty("user.dir") + "/reports/" + methodName + ".png";// path to save
+																									// scrrenshots
+		FileUtils.copyFile(source, new File(destinationPath));// move the actual file to the distation
+
 		return destinationPath;
-		
+
 	}
-	
+
 }

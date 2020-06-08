@@ -6,11 +6,11 @@ import org.openqa.selenium.WebElement;
 
 public class LoginPage {
 
-	WebDriver driver;
+	private WebDriver driver;
 
-	By emailField = By.id("user_email");
-	By passField = By.id("user_password");
-	By signField = By.xpath("//input[@name='commit']");
+	private By emailField = By.id("user_email");
+	private By passField = By.id("user_password");
+	private By signField = By.xpath("//input[@name='commit']");
 
 	public LoginPage(WebDriver driver) {
 
