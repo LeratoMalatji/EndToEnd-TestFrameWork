@@ -7,18 +7,31 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+
+import utility.ExtentReporterNg;
+
 public class Listeners extends Base implements ITestListener {
 
+	private  ExtentReports extent =ExtentReporterNg.getReportObject();
+	private ExtentTest test;
 	@Override
 	public void onTestStart(ITestResult result) {
-		// TODO Auto-generated method stub
+		
+		
+		//dynamic name creation using result
+		 test = extent.createTest(result.getMethod().getMethodName());
+		
 
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
-
+		
+		test.log(Status.PASS, "Test has passed");
+		
 	}
 
 	@Override
@@ -26,7 +39,9 @@ public class Listeners extends Base implements ITestListener {
 
 		String failedMethodName = result.getMethod().getMethodName(); // getting method name from the current running
 																		// instance of a class
-
+		//get stacktrace log if failed
+		test.fail(result.getThrowable());
+		
 		WebDriver driver = null;
 
 		try {
@@ -77,7 +92,8 @@ public class Listeners extends Base implements ITestListener {
 
 	@Override
 	public void onFinish(ITestContext context) {
-		// TODO Auto-generated method stub
+		
+		extent.flush();
 
 	}
 

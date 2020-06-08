@@ -35,7 +35,7 @@ public class ValidateTitle extends Base {
 	}
 	
 	@Test
-	public void homePageNavigation() {
+	public void TitleValidation() {
 
 		log.info("Landing on url");
 		

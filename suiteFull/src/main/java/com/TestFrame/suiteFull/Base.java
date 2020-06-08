@@ -32,7 +32,7 @@ public class Base {
 			
 			
 			//loading data dynamically form external file
-			input = new FileInputStream(new File("/home/lerato/eclipse-workspace/suiteFull/src/main/resources/com/TestFrame/suiteFull/data.properties"));
+			input = new FileInputStream(new File("/home/lerato/git/EndToEnd-TestFrameWork/suiteFull/src/main/resources/com/TestFrame/suiteFull/data.properties"));
 			log.info("Resource File located");
 			
 		} catch (FileNotFoundException e) {
