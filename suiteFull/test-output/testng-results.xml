@@ -2,56 +2,24 @@
 <testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-08T19:24:24 SAST" name="Suite" finished-at="2020-06-08T19:24:54 SAST" duration-ms="29937">
+  <suite started-at="2020-06-08T23:23:26 SAST" name="Suite" finished-at="2020-06-08T23:23:58 SAST" duration-ms="31594">
     <groups>
     </groups>
-    <test started-at="2020-06-08T19:24:24 SAST" name="Test" finished-at="2020-06-08T19:24:48 SAST" duration-ms="23379">
-      <class name="com.TestFrame.suiteFull.HomePage">
-        <test-method signature="homePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:com.TestFrame.suiteFull.HomePage@35e5d0e5]" started-at="2020-06-08T19:24:24 SAST" name="homePageNavigation" data-provider="getData" finished-at="2020-06-08T19:24:36 SAST" duration-ms="11880" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[leratomalatji@ymail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[jump.123]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2020-06-08T23:23:26 SAST" name="appTest" finished-at="2020-06-08T23:23:26 SAST" duration-ms="77">
+      <class name="com.TestFrame.suiteFull.AppTest">
+        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:com.TestFrame.suiteFull.AppTest@640f11a1]" started-at="2020-06-08T23:23:26 SAST" name="shouldAnswerWithTrue" finished-at="2020-06-08T23:23:26 SAST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homePageNavigation -->
-        <test-method signature="homePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:com.TestFrame.suiteFull.HomePage@35e5d0e5]" started-at="2020-06-08T19:24:36 SAST" name="homePageNavigation" data-provider="getData" finished-at="2020-06-08T19:24:48 SAST" duration-ms="11367" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[leratom@commandquality.co.za]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homePageNavigation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.TestFrame.suiteFull.HomePage@35e5d0e5]" started-at="2020-06-08T19:24:48 SAST" name="teardown" finished-at="2020-06-08T19:24:48 SAST" duration-ms="93" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.TestFrame.suiteFull.HomePage -->
-    </test> <!-- Test -->
-    <test started-at="2020-06-08T19:24:48 SAST" name="validateTitle" finished-at="2020-06-08T19:24:54 SAST" duration-ms="6059">
+        </test-method> <!-- shouldAnswerWithTrue -->
+      </class> <!-- com.TestFrame.suiteFull.AppTest -->
+    </test> <!-- appTest -->
+    <test started-at="2020-06-08T23:23:26 SAST" name="validateTitle" finished-at="2020-06-08T23:23:33 SAST" duration-ms="6181">
       <class name="com.TestFrame.suiteFull.ValidateTitle">
-        <test-method is-config="true" signature="startInit()[pri:0, instance:com.TestFrame.suiteFull.ValidateTitle@6b7906b3]" started-at="2020-06-08T19:24:48 SAST" name="startInit" finished-at="2020-06-08T19:24:54 SAST" duration-ms="5506" status="PASS">
+        <test-method is-config="true" signature="startInit()[pri:0, instance:com.TestFrame.suiteFull.ValidateTitle@3a1dd365]" started-at="2020-06-08T23:23:26 SAST" name="startInit" finished-at="2020-06-08T23:23:32 SAST" duration-ms="5626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startInit -->
-        <test-method signature="homePageNavigation()[pri:0, instance:com.TestFrame.suiteFull.ValidateTitle@6b7906b3]" started-at="2020-06-08T19:24:54 SAST" name="homePageNavigation" finished-at="2020-06-08T19:24:54 SAST" duration-ms="33" status="FAIL">
+        <test-method signature="TitleValidation()[pri:0, instance:com.TestFrame.suiteFull.ValidateTitle@3a1dd365]" started-at="2020-06-08T23:23:32 SAST" name="TitleValidation" finished-at="2020-06-08T23:23:32 SAST" duration-ms="46" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected:<FEATURED COURSESx> but was:<FEATURED COURSES>]]>
@@ -60,7 +28,7 @@
               <![CDATA[java.lang.AssertionError: expected:<FEATURED COURSESx> but was:<FEATURED COURSES>
 at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:82)
 at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:87)
-at com.TestFrame.suiteFull.ValidateTitle.homePageNavigation(ValidateTitle.java:47)
+at com.TestFrame.suiteFull.ValidateTitle.TitleValidation(ValidateTitle.java:48)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -77,37 +45,64 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 at org.testng.TestRunner.privateRun(TestRunner.java:767)
 at org.testng.TestRunner.run(TestRunner.java:588)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
-at org.testng.TestNG.runSuites(TestNG.java:1066)
-at org.testng.TestNG.run(TestNG.java:1034)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homePageNavigation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.TestFrame.suiteFull.ValidateTitle@6b7906b3]" started-at="2020-06-08T19:24:54 SAST" name="teardown" finished-at="2020-06-08T19:24:54 SAST" duration-ms="117" status="PASS">
+        </test-method> <!-- TitleValidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.TestFrame.suiteFull.ValidateTitle@3a1dd365]" started-at="2020-06-08T23:23:32 SAST" name="teardown" finished-at="2020-06-08T23:23:33 SAST" duration-ms="131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.TestFrame.suiteFull.ValidateTitle -->
     </test> <!-- validateTitle -->
-    <test started-at="2020-06-08T19:24:54 SAST" name="appTest" finished-at="2020-06-08T19:24:54 SAST" duration-ms="7">
-      <class name="com.TestFrame.suiteFull.AppTest">
-        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:com.TestFrame.suiteFull.AppTest@2f05be7f]" started-at="2020-06-08T19:24:54 SAST" name="shouldAnswerWithTrue" finished-at="2020-06-08T19:24:54 SAST" duration-ms="2" status="PASS">
+    <test started-at="2020-06-08T23:23:26 SAST" name="Test" finished-at="2020-06-08T23:23:58 SAST" duration-ms="31594">
+      <class name="com.TestFrame.suiteFull.HomePage">
+        <test-method signature="homePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:com.TestFrame.suiteFull.HomePage@35e5d0e5]" started-at="2020-06-08T23:23:26 SAST" name="homePageNavigation" data-provider="getData" finished-at="2020-06-08T23:23:40 SAST" duration-ms="13969" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[leratomalatji@ymail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[jump.123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shouldAnswerWithTrue -->
-      </class> <!-- com.TestFrame.suiteFull.AppTest -->
-    </test> <!-- appTest -->
+        </test-method> <!-- homePageNavigation -->
+        <test-method signature="homePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:com.TestFrame.suiteFull.HomePage@35e5d0e5]" started-at="2020-06-08T23:23:40 SAST" name="homePageNavigation" data-provider="getData" finished-at="2020-06-08T23:23:58 SAST" duration-ms="17403" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[leratom@commandquality.co.za]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageNavigation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.TestFrame.suiteFull.HomePage@35e5d0e5]" started-at="2020-06-08T23:23:58 SAST" name="teardown" finished-at="2020-06-08T23:23:58 SAST" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.TestFrame.suiteFull.HomePage -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

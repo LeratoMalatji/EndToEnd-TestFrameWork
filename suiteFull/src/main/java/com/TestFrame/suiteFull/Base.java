@@ -19,10 +19,11 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class Base {
 
-	WebDriver driver;
-	Properties properties;
+	protected WebDriver driver;
+	protected Properties properties;
 	
-	public static Logger log = LogManager.getLogger(Base.class.getName());
+	//log to external file
+	private static Logger log = LogManager.getLogger(Base.class.getName());
 	public WebDriver initializeDriver() throws IOException {
 
 		properties = new Properties();
@@ -32,7 +33,7 @@ public class Base {
 			
 			
 			//loading data dynamically form external file
-			input = new FileInputStream(new File("/home/lerato/git/EndToEnd-TestFrameWork/suiteFull/src/main/resources/com/TestFrame/suiteFull/data.properties"));
+			input = new FileInputStream(new File(System.getProperty("user.dir")+"/src/main/resources/com/TestFrame/suiteFull/data.properties"));
 			log.info("Resource File located");
 			
 		} catch (FileNotFoundException e) {
@@ -42,28 +43,37 @@ public class Base {
 
 		properties.load(input);
 
-		String browserName = properties.getProperty("browser");
+		String browserName =null;
+		if(System.getProperty("browser")!=null)
+		{
+			//from MVN parameterizing with Jenkins
+			 browserName  =System.getProperty("browser");
+		}
+		else
+		{
+			//from the property file
+			 browserName = properties.getProperty("browser");
+		}
+		
+		
 
 		if ("chrome".equalsIgnoreCase(browserName)) {
 
-			System.setProperty("webdriver.chrome.driver",
-					"/home/lerato/Documents/SeleniumCourseJars/ChromeDriver/chromedriver");
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/main/resources/browserDrivers/chromedriver");
 
 			driver = new ChromeDriver();
 			log.info("Running on Test on browser "+browserName);
 
 		} else if ("firefox".equalsIgnoreCase(browserName)) {
 			
-			System.setProperty("webdriver.gecko.driver",
-					"/home/lerato/Documents/SeleniumCourseJars/FireFoxDriver/geckodriver");
+			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"/src/main/resources/browserDrivers/geckodriver");
 			driver = new FirefoxDriver();
 			
 			log.info("Running on Test on browser "+browserName);
 			
 		} else if ("IE".equalsIgnoreCase("IE")) {
 			
-			System.setProperty("webdriver.ie.driver",
-					"/home/lerato/Documents/SeleniumCourseJars/InternetExplor/IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver",System.getProperty("user.dir")+"/src/main/resources/browserDrivers/IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 			
 			log.info("Running on Test on browser "+browserName);
@@ -81,14 +91,15 @@ public class Base {
 		return driver;
 	}
 
-	public void getScreenShotPath(String methodName,WebDriver driver) throws IOException
+	public String getScreenShotPath(String methodName,WebDriver driver) throws IOException
 	{
-		
+		// Taking a screenshot 
 		TakesScreenshot screen=(TakesScreenshot)driver;
 		File source =screen.getScreenshotAs(OutputType.FILE);
-		String destinationPath =System.getProperty("user.dir")+"/reports/"+methodName+".png";
-		FileUtils.copyFile(source,new File(destinationPath));
+		String destinationPath =System.getProperty("user.dir")+"/reports/"+methodName+".png";// path to save scrrenshots
+		FileUtils.copyFile(source,new File(destinationPath));//move the actual file to the distation
 		
+		return destinationPath;
 		
 	}
 	

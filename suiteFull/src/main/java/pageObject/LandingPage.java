@@ -6,10 +6,10 @@ import org.openqa.selenium.WebElement;
 
 public class LandingPage {
 
-	WebDriver driver;
+	private WebDriver driver;
 
-	By signin = By.xpath("//span[contains(text(),'Login')]");
-	By title= By.xpath("//h2[contains(text(),'Featured Courses')]");
+	private By signin = By.xpath("//span[contains(text(),'Login')]");
+	private By title= By.xpath("//h2[contains(text(),'Featured Courses')]");
 
 	public LandingPage(WebDriver driver) {
 
@@ -17,9 +17,14 @@ public class LandingPage {
 
 	}
 
-	public WebElement getLoginButton() {
+	public LoginPage getLoginButton() {
 
-		return driver.findElement(signin);
+		/* this method is used to minimize code on the test page if the action taken will send you to a new page after clicking
+		 * so that you dont create a new pageObject on the testcase we just return that pageObject to the testcase
+		*/
+		 driver.findElement(signin).click();
+		 LoginPage login = new LoginPage(driver);
+		 return login;
 	}
 	
 	public WebElement getTitle() {

@@ -1,3 +1,9 @@
-19:24:49.384 [main] INFO  com.TestFrame.suiteFull.ValidateTitle - Initializing browser
-19:24:54.100 [main] INFO  com.TestFrame.suiteFull.ValidateTitle - Landing on url
-19:24:54.533 [main] INFO  com.TestFrame.suiteFull.ValidateTitle - Closing the browser
+23:23:28.230 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+23:23:28.275 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser chrome
+23:23:28.276 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+23:23:28.387 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.ValidateTitle - Initializing browser
+23:23:32.554 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.ValidateTitle - Landing on url
+23:23:32.952 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.ValidateTitle - Closing the browser
+23:23:40.915 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Resource File located
+23:23:41.397 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser chrome
+23:23:41.397 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Maximizing browser

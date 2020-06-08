@@ -15,7 +15,7 @@ import pageObject.LoginPage;
 public class HomePage extends Base {
 
 	
-	public static Logger log = LogManager.getLogger(HomePage.class.getName());
+	private static Logger log = LogManager.getLogger(HomePage.class.getName());
 	protected WebDriver driver;
 	
 	@Test(dataProvider = "getData")
@@ -36,10 +36,10 @@ public class HomePage extends Base {
 		
 		LandingPage landing = new LandingPage(driver);
 
-		landing.getLoginButton().click();
+		LoginPage login =landing.getLoginButton();
 		
 		log.info("landed on login page");
-		LoginPage login = new LoginPage(driver);
+		//LoginPage login = new LoginPage(driver);
 
 		login.getEmailField().sendKeys(email);
 		login.getPasswordField().sendKeys(password);

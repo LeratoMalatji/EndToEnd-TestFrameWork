@@ -12,9 +12,10 @@ import java.io.IOException;
 import pageObject.LandingPage;
 
 public class ValidateTitle extends Base {
-	public static Logger log = LogManager.getLogger(ValidateTitle.class.getName());
 	
+	private static Logger log = LogManager.getLogger(ValidateTitle.class.getName());
 	protected WebDriver driver;
+	
 	@BeforeTest
 	public void startInit()
 	{

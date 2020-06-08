@@ -1,13 +1,12 @@
-17:44:36.523 [main] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
-17:44:36.647 [main] INFO  com.TestFrame.suiteFull.ValidateTitle - Initializing browser
-17:45:11.875 [main] INFO  com.TestFrame.suiteFull.ValidateTitle - Landing on url
-17:45:12.592 [main] INFO  com.TestFrame.suiteFull.ValidateTitle - Closing the browser
-19:24:24.848 [main] INFO  com.TestFrame.suiteFull.Base - Resource File located
-19:24:25.818 [main] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser chrome
-19:24:25.819 [main] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
-19:24:36.728 [main] INFO  com.TestFrame.suiteFull.Base - Resource File located
-19:24:37.324 [main] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser chrome
-19:24:37.324 [main] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
-19:24:48.592 [main] INFO  com.TestFrame.suiteFull.Base - Resource File located
-19:24:49.257 [main] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser chrome
-19:24:49.263 [main] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+23:19:08.227 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Resource File located
+23:20:56.193 [main] INFO  com.TestFrame.suiteFull.Base - Resource File located
+23:20:56.231 [main] INFO  com.TestFrame.suiteFull.Base - Resource File located
+23:22:49.225 [main] INFO  com.TestFrame.suiteFull.Base - Resource File located
+23:22:50.097 [main] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser chrome
+23:22:50.097 [main] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+23:23:02.674 [main] INFO  com.TestFrame.suiteFull.Base - Resource File located
+23:23:03.140 [main] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser chrome
+23:23:03.140 [main] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+23:23:26.955 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.Base - Resource File located
+23:23:26.965 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Resource File located
+23:23:28.230 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser chrome
