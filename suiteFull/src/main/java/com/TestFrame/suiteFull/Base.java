@@ -58,7 +58,7 @@ public class Base {
 		return driver;
 	}
 
-	public void browswerSelection(String browserName) {
+	private void browswerSelection(String browserName) {
 
 		 String systemPath =System.getProperty("user.dir");
 		if ("chrome".equalsIgnoreCase(browserName)) {
