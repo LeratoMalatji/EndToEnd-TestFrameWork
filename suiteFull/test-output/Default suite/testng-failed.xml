@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestFrame.suiteFull.HomePage">
+      <class name="com.TestFrame.suiteFull.ValidateTitle">
         <methods>
-          <include name="homePageNavigation" invocation-numbers="0 1"/>
+          <include name="startInit"/>
           <include name="teardown"/>
+          <include name="TitleValidation"/>
         </methods>
-      </class> <!-- com.TestFrame.suiteFull.HomePage -->
+      </class> <!-- com.TestFrame.suiteFull.ValidateTitle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

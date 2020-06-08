@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-08T23:23:26 SAST" name="Suite" finished-at="2020-06-08T23:23:58 SAST" duration-ms="31594">
+  <suite started-at="2020-06-08T23:54:34 SAST" name="Suite" finished-at="2020-06-08T23:55:12 SAST" duration-ms="37930">
     <groups>
     </groups>
-    <test started-at="2020-06-08T23:23:26 SAST" name="appTest" finished-at="2020-06-08T23:23:26 SAST" duration-ms="77">
+    <test started-at="2020-06-08T23:54:34 SAST" name="appTest" finished-at="2020-06-08T23:54:34 SAST" duration-ms="60">
       <class name="com.TestFrame.suiteFull.AppTest">
-        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:com.TestFrame.suiteFull.AppTest@640f11a1]" started-at="2020-06-08T23:23:26 SAST" name="shouldAnswerWithTrue" finished-at="2020-06-08T23:23:26 SAST" duration-ms="24" status="PASS">
+        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:com.TestFrame.suiteFull.AppTest@5c10f1c3]" started-at="2020-06-08T23:54:34 SAST" name="shouldAnswerWithTrue" finished-at="2020-06-08T23:54:34 SAST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldAnswerWithTrue -->
       </class> <!-- com.TestFrame.suiteFull.AppTest -->
     </test> <!-- appTest -->
-    <test started-at="2020-06-08T23:23:26 SAST" name="validateTitle" finished-at="2020-06-08T23:23:33 SAST" duration-ms="6181">
+    <test started-at="2020-06-08T23:54:34 SAST" name="validateTitle" finished-at="2020-06-08T23:54:40 SAST" duration-ms="6487">
       <class name="com.TestFrame.suiteFull.ValidateTitle">
-        <test-method is-config="true" signature="startInit()[pri:0, instance:com.TestFrame.suiteFull.ValidateTitle@3a1dd365]" started-at="2020-06-08T23:23:26 SAST" name="startInit" finished-at="2020-06-08T23:23:32 SAST" duration-ms="5626" status="PASS">
+        <test-method is-config="true" signature="startInit()[pri:0, instance:com.TestFrame.suiteFull.ValidateTitle@395b56bb]" started-at="2020-06-08T23:54:34 SAST" name="startInit" finished-at="2020-06-08T23:54:40 SAST" duration-ms="5921" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startInit -->
-        <test-method signature="TitleValidation()[pri:0, instance:com.TestFrame.suiteFull.ValidateTitle@3a1dd365]" started-at="2020-06-08T23:23:32 SAST" name="TitleValidation" finished-at="2020-06-08T23:23:32 SAST" duration-ms="46" status="FAIL">
+        <test-method signature="TitleValidation()[pri:0, instance:com.TestFrame.suiteFull.ValidateTitle@395b56bb]" started-at="2020-06-08T23:54:40 SAST" name="TitleValidation" finished-at="2020-06-08T23:54:40 SAST" duration-ms="49" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected:<FEATURED COURSESx> but was:<FEATURED COURSES>]]>
@@ -28,7 +28,7 @@
               <![CDATA[java.lang.AssertionError: expected:<FEATURED COURSESx> but was:<FEATURED COURSES>
 at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:82)
 at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:87)
-at com.TestFrame.suiteFull.ValidateTitle.TitleValidation(ValidateTitle.java:48)
+at com.TestFrame.suiteFull.ValidateTitle.TitleValidation(ValidateTitle.java:45)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -58,15 +58,15 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TitleValidation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.TestFrame.suiteFull.ValidateTitle@3a1dd365]" started-at="2020-06-08T23:23:32 SAST" name="teardown" finished-at="2020-06-08T23:23:33 SAST" duration-ms="131" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.TestFrame.suiteFull.ValidateTitle@395b56bb]" started-at="2020-06-08T23:54:40 SAST" name="teardown" finished-at="2020-06-08T23:54:40 SAST" duration-ms="97" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.TestFrame.suiteFull.ValidateTitle -->
     </test> <!-- validateTitle -->
-    <test started-at="2020-06-08T23:23:26 SAST" name="Test" finished-at="2020-06-08T23:23:58 SAST" duration-ms="31594">
+    <test started-at="2020-06-08T23:54:34 SAST" name="Test" finished-at="2020-06-08T23:55:12 SAST" duration-ms="37930">
       <class name="com.TestFrame.suiteFull.HomePage">
-        <test-method signature="homePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:com.TestFrame.suiteFull.HomePage@35e5d0e5]" started-at="2020-06-08T23:23:26 SAST" name="homePageNavigation" data-provider="getData" finished-at="2020-06-08T23:23:40 SAST" duration-ms="13969" status="PASS">
+        <test-method signature="homePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:com.TestFrame.suiteFull.HomePage@73173f63]" started-at="2020-06-08T23:54:34 SAST" name="homePageNavigation" data-provider="getData" finished-at="2020-06-08T23:54:45 SAST" duration-ms="11053" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -82,7 +82,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageNavigation -->
-        <test-method signature="homePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:com.TestFrame.suiteFull.HomePage@35e5d0e5]" started-at="2020-06-08T23:23:40 SAST" name="homePageNavigation" data-provider="getData" finished-at="2020-06-08T23:23:58 SAST" duration-ms="17403" status="PASS">
+        <test-method signature="homePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:com.TestFrame.suiteFull.HomePage@73173f63]" started-at="2020-06-08T23:54:45 SAST" name="homePageNavigation" data-provider="getData" finished-at="2020-06-08T23:55:11 SAST" duration-ms="26721" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -98,7 +98,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageNavigation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.TestFrame.suiteFull.HomePage@35e5d0e5]" started-at="2020-06-08T23:23:58 SAST" name="teardown" finished-at="2020-06-08T23:23:58 SAST" duration-ms="176" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.TestFrame.suiteFull.HomePage@73173f63]" started-at="2020-06-08T23:55:11 SAST" name="teardown" finished-at="2020-06-08T23:55:12 SAST" duration-ms="115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
