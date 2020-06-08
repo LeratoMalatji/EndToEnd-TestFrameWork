@@ -1,0 +1,13 @@
+17:41:58.203 [main] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser chrome
+17:41:58.207 [main] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+17:41:58.331 [main] INFO  com.TestFrame.suiteFull.ValidateTitle - Initializing browser
+17:42:18.033 [main] INFO  com.TestFrame.suiteFull.ValidateTitle - Landing on url
+17:42:18.094 [main] INFO  com.TestFrame.suiteFull.ValidateTitle - Closing the browser
+17:44:14.275 [main] INFO  com.TestFrame.suiteFull.Base - Resource File located
+17:44:15.328 [main] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser chrome
+17:44:15.331 [main] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+17:44:25.699 [main] INFO  com.TestFrame.suiteFull.Base - Resource File located
+17:44:26.259 [main] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser chrome
+17:44:26.259 [main] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+17:44:35.850 [main] INFO  com.TestFrame.suiteFull.Base - Resource File located
+17:44:36.523 [main] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser chrome

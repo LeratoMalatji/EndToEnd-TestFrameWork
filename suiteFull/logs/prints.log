@@ -1,0 +1,4 @@
+17:44:36.523 [main] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+17:44:36.647 [main] INFO  com.TestFrame.suiteFull.ValidateTitle - Initializing browser
+17:45:11.875 [main] INFO  com.TestFrame.suiteFull.ValidateTitle - Landing on url
+17:45:12.592 [main] INFO  com.TestFrame.suiteFull.ValidateTitle - Closing the browser
