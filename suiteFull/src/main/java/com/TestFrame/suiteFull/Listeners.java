@@ -17,20 +17,23 @@ public class Listeners extends Base implements ITestListener {
 
 	private  ExtentReports extent =ExtentReporterNg.getReportObject();
 	private ExtentTest test;
+	
+	private ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>(); // pool for keeping extentTest object thread safe.
+	
 	@Override
 	public void onTestStart(ITestResult result) {
 		
 		
 		//dynamic name creation using result
 		 test = extent.createTest(result.getMethod().getMethodName());
-		
+		 extentTest.set(test);
 
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		
-		test.log(Status.PASS, "Test has passed");
+		extentTest.get().log(Status.PASS, "Test has passed");
 		
 	}
 
@@ -40,7 +43,7 @@ public class Listeners extends Base implements ITestListener {
 		String failedMethodName = result.getMethod().getMethodName(); // getting method name from the current running
 																		// instance of a class
 		//get stacktrace log if failed
-		test.fail(result.getThrowable());
+		extentTest.get().fail(result.getThrowable());
 		
 		WebDriver driver = null;
 
@@ -80,7 +83,8 @@ public class Listeners extends Base implements ITestListener {
 
 	@Override
 	public void onTestFailedWithTimeout(ITestResult result) {
-		// TODO Auto-generated method stub
+		
+		extentTest.get().log(Status.FAIL,"page took to long to respond");
 
 	}
 
