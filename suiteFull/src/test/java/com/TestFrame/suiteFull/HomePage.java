@@ -53,11 +53,11 @@ public class HomePage extends Base {
 	public Object[][] getData() {
 		Object[][] data = new Object[2][2];
 
-		data[0][0] = "leratomalatji@ymail.com";
-		data[0][1] = "jump.123";
+		data[0][0] = "leratom.lp@ymail.com";
+		data[0][1] = "jumpef";
 
-		data[1][0] = "leratom@commandquality.co.za";
-		data[1][1] = "12345";
+		data[1][0] = "leratom@command.co.za";
+		data[1][1] = "1234523";
 
 		return data;
 	}
