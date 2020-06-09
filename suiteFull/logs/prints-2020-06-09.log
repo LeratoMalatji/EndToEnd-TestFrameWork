@@ -1,11 +1,11 @@
-13:40:32.374 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser chromeheadless
-13:40:32.376 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
-13:44:05.105 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.Base - Resource File located
-13:44:05.123 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser headless mode 
-13:44:05.146 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Resource File located
-13:44:05.147 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser headless mode 
-13:44:11.566 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser firefoxheadless
-13:44:11.566 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
-13:44:11.668 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser firefoxheadless
-13:44:11.668 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
-13:44:11.683 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.ValidateTitle - Initializing browser
+18:33:04.609 [main] ERROR utility.DatabaseUtil - Could not connect to the database
+18:34:32.931 [main] INFO  utility.DatabaseUtil - loading property file needed for database input values
+18:34:33.439 [main] INFO  utility.DatabaseUtil - Sucessfully connected to database
+18:38:11.351 [main] INFO  utility.DatabaseUtil - loading property file needed for database input values
+18:38:11.880 [main] INFO  utility.DatabaseUtil - Sucessfully connected to database
+20:07:59.585 [main] INFO  utility.DatabaseUtil - loading property file needed for database input values
+20:07:59.965 [main] INFO  utility.DatabaseUtil - Sucessfully connected to database
+20:07:59.980 [main] INFO  dataAccessObject.UserCredentials - Quering the database
+20:07:59.985 [main] ERROR dataAccessObject.UserCredentials - Something went wrong while quering the database
+20:07:59.986 [main] INFO  dataAccessObject.UserCredentials - Quering returning database results
+20:08:32.510 [main] INFO  utility.DatabaseUtil - loading property file needed for database input values

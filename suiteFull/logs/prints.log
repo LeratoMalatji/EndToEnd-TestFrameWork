@@ -1,7 +1,3 @@
-13:44:24.786 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.ValidateTitle - Landing on url
-13:44:24.852 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.ValidateTitle - Title found on Homepage FEATURED COURSES Test passed
-13:44:24.853 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.ValidateTitle - Closing the browser
-13:44:45.664 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Resource File located
-13:44:45.664 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser headless mode 
-13:44:49.656 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser firefoxheadless
-13:44:49.656 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+20:08:32.938 [main] INFO  utility.DatabaseUtil - Sucessfully connected to database
+20:08:32.959 [main] INFO  dataAccessObject.UserCredentials - Quering the database
+20:08:32.962 [main] INFO  dataAccessObject.UserCredentials - Quering returning database results

@@ -23,7 +23,6 @@ public class Listeners extends Base implements ITestListener {
 	@Override
 	public void onTestStart(ITestResult result) {
 		
-		
 		//dynamic name creation using result
 		 test = extent.createTest(result.getMethod().getMethodName());
 		 extentTest.set(test);
