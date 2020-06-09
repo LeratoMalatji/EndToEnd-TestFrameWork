@@ -1,0 +1,11 @@
+13:40:32.374 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser chromeheadless
+13:40:32.376 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+13:44:05.105 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.Base - Resource File located
+13:44:05.123 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser headless mode 
+13:44:05.146 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Resource File located
+13:44:05.147 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser headless mode 
+13:44:11.566 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser firefoxheadless
+13:44:11.566 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+13:44:11.668 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser firefoxheadless
+13:44:11.668 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+13:44:11.683 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.ValidateTitle - Initializing browser

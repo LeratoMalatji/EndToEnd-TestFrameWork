@@ -14,7 +14,9 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class Base {
@@ -27,6 +29,7 @@ public class Base {
 
 		properties = new Properties();
 		FileInputStream input = null;
+		String browserName = null;
 
 		try {
 			// loading data dynamically form external file
@@ -40,7 +43,6 @@ public class Base {
 
 		properties.load(input);
 
-		String browserName = null;
 		if (System.getProperty("browser") != null) {
 			// from MVN parameterizing with Jenkins
 			browserName = System.getProperty("browser");
@@ -60,28 +62,48 @@ public class Base {
 
 	private void browswerSelection(String browserName) {
 
-		 String systemPath =System.getProperty("user.dir");
-		if ("chrome".equalsIgnoreCase(browserName)) {
+		String systemPath = System.getProperty("user.dir");
 
-			
-			System.setProperty("webdriver.chrome.driver",systemPath+ "/src/main/resources/browserDrivers/chromedriver");
-			driver = new ChromeDriver();
+		if ("chrome".equalsIgnoreCase(browserName) || "chromeheadless".equalsIgnoreCase(browserName)) {
+
+			ChromeOptions option = new ChromeOptions();
+			System.setProperty("webdriver.chrome.driver",
+					systemPath + "/src/main/resources/browserDrivers/chromedriver");
+
+			if (browserName.contains("headless")) {
+
+				option.addArguments("--headless");
+				log.info("Running on Test on browser in headless Mode " + browserName);
+
+			}
+
+			driver = new ChromeDriver(option);
 			log.info("Running on Test on browser " + browserName);
 
-		} else if ("firefox".equalsIgnoreCase(browserName)) {
+		} else if ("firefox".equalsIgnoreCase(browserName) || "firefoxheadless".equalsIgnoreCase(browserName)) {
 
-			System.setProperty("webdriver.gecko.driver",systemPath + "/src/main/resources/browserDrivers/geckodriver");
-			driver = new FirefoxDriver();
+			FirefoxOptions option = new FirefoxOptions();
+			System.setProperty("webdriver.gecko.driver", systemPath + "/src/main/resources/browserDrivers/geckodriver");
+
+			if (browserName.contains("headless")) {
+
+				option.addArguments("--headless");
+				log.info("Running on Test on browser headless mode ");
+			}
+
+			driver = new FirefoxDriver(option);
 			log.info("Running on Test on browser " + browserName);
 
 		} else if ("IE".equalsIgnoreCase("IE")) {
 
-			System.setProperty("webdriver.ie.driver",systemPath+ "/src/main/resources/browserDrivers/IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver",
+					systemPath + "/src/main/resources/browserDrivers/IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
+
 			log.info("Running on Test on browser " + browserName);
 
 		} else {
-			
+
 			log.fatal("Something went wrong with the browswer");
 			throw new RuntimeException("No such driver/browser name found");
 		}

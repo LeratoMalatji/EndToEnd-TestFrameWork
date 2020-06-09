@@ -42,7 +42,7 @@ public class ValidateTitle extends Base {
 		LandingPage landing = new LandingPage(driver);
 		String title = landing.getTitle().getText();
 		
-		AssertJUnit.assertEquals("FEATURED COURSESx", title);
+		AssertJUnit.assertEquals("FEATURED COURSES", title);
 		log.info("Title found on Homepage "+title +" Test passed");
 
 	}
