@@ -1,0 +1,11 @@
+22:29:45.386 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Resource File located
+22:29:47.052 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser chrome
+22:29:47.052 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+22:29:47.166 [TestNG-tests-1] INFO  stepDefinations.LoginDefination - Initialazing driver in Login defination
+22:29:52.304 [TestNG-tests-1] INFO  stepDefinations.LoginDefination - open browers navigating to url
+22:29:59.223 [TestNG-tests-1] INFO  stepDefinations.LoginDefination - clicked on login button
+22:30:01.317 [TestNG-tests-1] INFO  stepDefinations.LoginDefination - submitted login info
+22:30:11.371 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Resource File located
+22:30:11.909 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser chrome
+22:30:11.910 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+22:30:12.024 [TestNG-tests-1] INFO  stepDefinations.LoginDefination - Initialazing driver in Login defination

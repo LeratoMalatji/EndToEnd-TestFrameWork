@@ -31,4 +31,14 @@ public class LandingPage {
 		return driver.findElement(title);
 	}
 
+	//Just added to use with cucumber e.g
+	public WebElement getLoginButtonJustForCuCumber() {
+
+		/* this method is used to minimize code on the test page if the action taken will send you to a new page after clicking
+		 * so that you dont create a new pageObject on the testcase we just return that pageObject to the testcase
+		*/
+		return  driver.findElement(signin);
+		 
+	}
+	
 }

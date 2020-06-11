@@ -1,3 +1,9 @@
-20:08:32.938 [main] INFO  utility.DatabaseUtil - Sucessfully connected to database
-20:08:32.959 [main] INFO  dataAccessObject.UserCredentials - Quering the database
-20:08:32.962 [main] INFO  dataAccessObject.UserCredentials - Quering returning database results
+22:30:16.356 [TestNG-tests-1] INFO  stepDefinations.LoginDefination - open browers navigating to url
+22:30:21.629 [TestNG-tests-1] INFO  stepDefinations.LoginDefination - clicked on login button
+22:30:23.698 [TestNG-tests-1] INFO  stepDefinations.LoginDefination - submitted login info
+22:30:33.735 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Resource File located
+22:30:59.371 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser chrome
+22:30:59.371 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+22:30:59.484 [TestNG-tests-1] INFO  stepDefinations.LoginDefination - Initialazing driver in Login defination
+22:31:03.679 [TestNG-tests-1] INFO  stepDefinations.LoginDefination - open browers navigating to url
+22:31:03.714 [TestNG-tests-1] INFO  stepDefinations.LoginDefination - Title found on Homepage FEATURED COURSES Test passed
