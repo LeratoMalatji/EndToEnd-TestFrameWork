@@ -11,7 +11,7 @@ This is a web based application automation hybrid framework using Selenium.
 * Cucumber
 * Selenium
 
-If used with with with a CI tool like Jenkins  you could paramiterize your Job with to run on different browswers.
+If used with with with a CI tool like Jenkins  you could paramiterize your Job with to run on different browsers.
 
  BrowerNames
  
