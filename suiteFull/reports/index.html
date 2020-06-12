@@ -56,7 +56,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Jun 12, 2020 06:47:03 PM</span>
+                    <span class="badge badge-primary">Jun 12, 2020 07:17:49 PM</span>
                 </a>
             </li>
         </ul>
@@ -72,15 +72,7 @@
           <span class="title">Tests</span>
         </a>
       </li>
-            <li class="nav-item dropdown" onclick="toggleView('exception-view')">
-        <a id="nav-ex" class="dropdown-toggle" href="exception.html">
-          <span class="icon-holder">
-            <i class="fa fa-bug"></i>
-          </span>
-          <span class="title">Exception</span>
-        </a>
-      </li>
-      <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
         <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
           <span class="icon-holder">
             <i class="fa fa-bar-chart"></i>
@@ -109,7 +101,7 @@
 					</a>
 					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 						<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
-						<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
+						
 						
 						
 						
@@ -132,8 +124,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">shouldAnswerWithTrue</p>
-							<p class="duration text-sm">0h 0m 0s+6ms</p>
-							<span class="datetime">18:47:04 PM</span>
+							<p class="duration text-sm">0h 0m 0s+11ms</p>
+							<span class="datetime">19:17:49 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -141,9 +133,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">shouldAnswerWithTrue</h5>
-									<span class='badge badge-success'>06.12.2020 18:47:04</span>
-									<span class='badge badge-danger'>06.12.2020 18:47:04</span>
-									<span class='badge badge-default'>0h 0m 0s+6ms</span>
+									<span class='badge badge-success'>06.12.2020 19:17:49</span>
+									<span class='badge badge-danger'>06.12.2020 19:17:49</span>
+									<span class='badge badge-default'>0h 0m 0s+11ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -160,7 +152,7 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>18:47:04</td>
+				<td>19:17:49</td>
 				<td>
 						Test has passed
 				</td>
@@ -170,28 +162,28 @@
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="fail" test-id="2"
+				<li class="test-item"  status="pass" test-id="2"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar fail-bg">
-						<i class="fa fa-times text-white"></i>
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">homePageNavigation</p>
-							<p class="duration text-sm">0h 0m 42s+457ms</p>
-							<span class="datetime">18:47:04 PM</span>
+							<p class="duration text-sm">0h 0m 11s+39ms</p>
+							<span class="datetime">19:17:49 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-fail">homePageNavigation</h5>
-									<span class='badge badge-success'>06.12.2020 18:47:04</span>
-									<span class='badge badge-danger'>06.12.2020 18:47:46</span>
-									<span class='badge badge-default'>0h 0m 42s+457ms</span>
+									<h5 class="test-status text-pass">homePageNavigation</h5>
+									<span class='badge badge-success'>06.12.2020 19:17:49</span>
+									<span class='badge badge-danger'>06.12.2020 19:18:01</span>
+									<span class='badge badge-default'>0h 0m 11s+39ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -207,105 +199,10 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>18:47:46</td>
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:18:01</td>
 				<td>
-						<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=83.0.4103.61)
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'lerato-ThinkPad-T540p', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.3.0-53-generic', java.version: '11.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.ZYCzaP}, goog:chromeOptions: {debuggerAddress: localhost:46021}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 666dfcaac41af58f4d41c6a38046dc04
-*** Element info: {Using=id, value=user_email}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at pageObject.LoginPage.getEmailField(LoginPage.java:23)
-	at com.TestFrame.suiteFull.HomePage.homePageNavigation(HomePage.java:44)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</textarea>
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>18:47:46</td>
-				<td>
-						<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=83.0.4103.61)
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'lerato-ThinkPad-T540p', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.3.0-53-generic', java.version: '11.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.ZYCzaP}, goog:chromeOptions: {debuggerAddress: localhost:46021}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 666dfcaac41af58f4d41c6a38046dc04
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at com.TestFrame.suiteFull.Base.getScreenShotPath(Base.java:128)
-	at com.TestFrame.suiteFull.Listeners.onTestFailure(Listeners.java:64)
-	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:66)
-	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:651)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</textarea>
+						Test has passed
 				</td>
 			</tr>
 	</tbody>
@@ -323,8 +220,8 @@ Session ID: 666dfcaac41af58f4d41c6a38046dc04
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">TitleValidation</p>
-							<p class="duration text-sm">0h 0m 0s+255ms</p>
-							<span class="datetime">18:47:21 PM</span>
+							<p class="duration text-sm">0h 0m 0s+35ms</p>
+							<span class="datetime">19:17:56 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -332,9 +229,9 @@ Session ID: 666dfcaac41af58f4d41c6a38046dc04
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">TitleValidation</h5>
-									<span class='badge badge-success'>06.12.2020 18:47:21</span>
-									<span class='badge badge-danger'>06.12.2020 18:47:21</span>
-									<span class='badge badge-default'>0h 0m 0s+255ms</span>
+									<span class='badge badge-success'>06.12.2020 19:17:56</span>
+									<span class='badge badge-danger'>06.12.2020 19:17:56</span>
+									<span class='badge badge-default'>0h 0m 0s+35ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -351,7 +248,7 @@ Session ID: 666dfcaac41af58f4d41c6a38046dc04
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>18:47:21</td>
+				<td>19:17:56</td>
 				<td>
 						Test has passed
 				</td>
@@ -361,76 +258,52 @@ Session ID: 666dfcaac41af58f4d41c6a38046dc04
 </div>
 					</div>
 				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="test-content scrollable">
-		<div class="test-content-tools">
-			<ul>
-				<li>
-					<a class="back-to-test" href="javascript:void(0)">
-					<i class="fa fa-arrow-left"></i>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="test-content-detail">
-			<div class="detail-body"></div>
-		</div>
-	</div>
-</div><div class="test-wrapper row exception-view attributes-view">
-	<div class="test-list">
-		<div class="test-list-tools">
-			<ul class="tools pull-left">
-				<li>
-					<a href="">
-					<span class="font-size-14">Exception</span>
-					</a>
-				</li>
-			</ul>
-			<ul class="tools text-right">
-				<li>
-					<a href="#">
-					<span class="badge badge-primary">1</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="test-list-wrapper scrollable">
-			<ul class="test-list-item">
-				<li class="test-item">
+				<li class="test-item"  status="pass" test-id="4"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">org.openqa.selenium.WebDriverException</p>
-							<p class="duration text-sm">1 tests</p>
+							<p class="name">homePageNavigation</p>
+							<p class="duration text-sm">0h 0m 11s+692ms</p>
+							<span class="datetime">19:18:01 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
-						<div class="info">
-							<h4>org.openqa.selenium.WebDriverException</h4>
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">homePageNavigation</h5>
+									<span class='badge badge-success'>06.12.2020 19:18:01</span>
+									<span class='badge badge-danger'>06.12.2020 19:18:12</span>
+									<span class='badge badge-default'>0h 0m 11s+692ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
 						</div>
-						<table class='table table-sm mt-4'>
-							<thead>
-								<tr>
-									<th class="status-col">Status</th>
-									<th class="timestamp-col">Timestamp</th>
-									<th>TestName</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>18:47:04 PM</td>
-									<td class='linked' test-id='2'>
-										homePageNavigation
-									</td>
-								</tr>
-							</tbody>
-						</table>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>19:18:12</td>
+				<td>
+						Test has passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
 					</div>
 				</li>
 			</ul>
@@ -464,12 +337,12 @@ Session ID: 666dfcaac41af58f4d41c6a38046dc04
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='66,667%'>
-						<b>2</b> tests passed
+					<div><small data-tooltip='100%'>
+						<b>4</b> tests passed
 						</small>
 					</div>
 					<div>
-						<small data-tooltip='33,333%'><b>1</b> tests failed, 
+						<small data-tooltip='0%'><b>0</b> tests failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -487,9 +360,9 @@ Session ID: 666dfcaac41af58f4d41c6a38046dc04
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='50%'><b>2</b> events passed</small></div>
+					<div><small data-tooltip='100%'><b>4</b> events passed</small></div>
 					<div>
-						<small data-tooltip='50%'><b>2</b> events failed, 
+						<small data-tooltip='0%'><b>0</b> events failed, 
 						<b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -504,10 +377,10 @@ Session ID: 666dfcaac41af58f4d41c6a38046dc04
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Tests</h6>
-							<h2 class="font-size-28 font-weight-light mt-3">3</h2>
+							<h2 class="font-size-28 font-weight-light mt-3">4</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>66,67%</span>
+							<span>100,00%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -523,7 +396,7 @@ Session ID: 666dfcaac41af58f4d41c6a38046dc04
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">Jun 12, 2020 06:47:03 PM</h4>
+							<h4 class="font-weight-light mt-4">Jun 12, 2020 07:17:49 PM</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -539,7 +412,7 @@ Session ID: 666dfcaac41af58f4d41c6a38046dc04
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 0m 42s+807ms</h4>
+							<h4 class="font-weight-light mt-4">0h 0m 23s+203ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -592,14 +465,14 @@ Session ID: 666dfcaac41af58f4d41c6a38046dc04
 </div>
 <script>
 	var statusGroup = {
-	    parentCount: 3,
-		passParent: 2,
-		failParent: 1,
+	    parentCount: 4,
+		passParent: 4,
+		failParent: 0,
 		fatalParent: 0,
 		errorParent: 0,
 		warningParent: 0,
 		skipParent: 0,
-		exceptionsParent: 1,
+		exceptionsParent: 0,
 		childCount: 0,
 		passChild: 0,
 		failChild: 0,
@@ -621,8 +494,8 @@ Session ID: 666dfcaac41af58f4d41c6a38046dc04
 		debugGrandChild: 0,
 		exceptionsGrandChild: 0,
 		eventsCount: 4,
-		passEvents: 2,
-		failEvents: 2,
+		passEvents: 4,
+		failEvents: 0,
 		fatalEvents: 0,
 		errorEvents: 0,
 		warningEvents: 0,
@@ -634,7 +507,7 @@ Session ID: 666dfcaac41af58f4d41c6a38046dc04
 </script>
 <script>
 	var timeline = {
-	        "shouldAnswerWithTrue":0.006,"homePageNavigation":42.457,"TitleValidation":0.255
+	        "shouldAnswerWithTrue":0.011,"homePageNavigation":11.039,"TitleValidation":0.035,"homePageNavigation":11.692
 	};
 </script>
                 </div>
