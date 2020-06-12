@@ -12,7 +12,9 @@ This is a web based application automation hybrid framework using Selenium.
 * Selenium
 
 If used with with with a CI tool like Jenkins  you could paramiterize your Job with to run on different browswers.
+
  BrowerNames
+ 
   -chrome
   -firefox
   -safari
