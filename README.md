@@ -69,6 +69,7 @@ If used with with with a CI tool like Jenkins  you could paramiterize your Job w
                 ```bash
                 data.properties - is a file to drive external data to the framework like url ,broswer name , jdbc url    ,passwords 
                 and Database username ect...
+                ExtentReportData - all info needed for external report for the Index.hml file , like Tester name , Project name, and Document name etc..
                 ```
             * #### utility
             ```bash
