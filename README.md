@@ -103,7 +103,7 @@ If used with with with a CI tool like Jenkins  you could paramiterize your Job w
       * #### Test-output
    *  pom.xml
    
-         pom is also where testNg is also set up to intergrate with maven ,currently set up to execute both testNg and     Cumcumber TestNg.xml . Remove <suiteXmlFile>testngCucumber.xml</suiteXmlFile> to exclude your testcases from mvn excution
+         pom is also where testNg is also set up to intergrate with maven ,currently set up to execute both testNg and     Cumcumber TestNg.xml . Remove <suiteXmlFile>testngCucumber.xml</suiteXmlFile> tag to exclude your cucumber testcases from mvn excution
         
         ```bash
          <configuration>
