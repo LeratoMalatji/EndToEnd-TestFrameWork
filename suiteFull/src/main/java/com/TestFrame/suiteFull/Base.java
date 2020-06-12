@@ -105,6 +105,7 @@ public class Base {
 
 		}else if ("safari".equalsIgnoreCase(browserName))
 		{
+			//Not yet tested 
 			
 			 driver = new SafariDriver();
 			 log.info("Running on Test on browser " + browserName);
