@@ -46,7 +46,7 @@ This is a web based application automation hybrid framework using Selenium
                 -chromeDriver -version 83
                 -geckodriver
                 -IEDriverServer.exe
-                -safari driver is deprecated -1. install safari extention for selenium
+                -safari driver is deprecated -1. install safari extention for selenium on local safari browser then
                                              -2. Go safari preference , then click on advance then click on the checkbox
                                                 show Developer manu in munu bar
                                               -3.On the safari manu bar go to Develop and click on Allow Remote Automation
