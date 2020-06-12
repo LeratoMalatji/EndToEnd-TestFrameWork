@@ -43,7 +43,7 @@ This is a web based application automation hybrid framework using Selenium
             
                 ```bash
                 This package is for webDrivers for now framework supports Chrome,FireFox,Internet Explorer.
-                -chromeDriver
+                -chromeDriver -version 83
                 -geckodriver
                 -IEDriverServer.exe
                 ```
