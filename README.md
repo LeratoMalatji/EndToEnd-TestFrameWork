@@ -1,5 +1,5 @@
 # EndToEnd-TestFrameWork
-This is a web based application automation hybrid framework using Selenium
+This is a web based application automation hybrid framework using Selenium.
 
 ## Constructed with The following Technologies
 * JAVA 8
@@ -10,6 +10,16 @@ This is a web based application automation hybrid framework using Selenium
 * Log4j
 * Cucumber
 * Selenium
+
+If used with with with a CI tool like Jenkins  you could paramiterize your Job with to run on different browswers.
+ BrowerNames
+  -chrome
+  -firefox
+  -safari
+  -chromeheadless
+  -firefoxheadless
+  -IE
+  
 
 ## Navigating file structure
   * ### SuiteFull
