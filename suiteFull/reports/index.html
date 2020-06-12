@@ -56,7 +56,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Jun 11, 2020 10:29:44 PM</span>
+                    <span class="badge badge-primary">Jun 12, 2020 06:40:34 PM</span>
                 </a>
             </li>
         </ul>
@@ -108,7 +108,7 @@
 					<i class="fa fa-exclamation-circle"></i>
 					</a>
 					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-						
+						<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
 						<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
 						
 						
@@ -122,7 +122,7 @@
 		</div>
 		<div class="test-list-wrapper scrollable">
 			<ul class="test-list-item">
-				<li class="test-item"  status="fail" test-id="1"
+				<li class="test-item"  status="fail" test-id="2"
 					author=""
 					tag=""
 					device="">
@@ -131,19 +131,19 @@
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">feature</p>
-							<p class="duration text-sm">0h 1m 28s+555ms</p>
-							<span class="datetime">22:29:45 PM</span>
+							<p class="name">homePageNavigation</p>
+							<p class="duration text-sm">0h 0m 30s+188ms</p>
+							<span class="datetime">18:40:34 PM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-fail">feature</h5>
-									<span class='badge badge-success'>06.11.2020 22:29:45</span>
-									<span class='badge badge-danger'>06.11.2020 22:31:13</span>
-									<span class='badge badge-default'>0h 1m 28s+555ms</span>
+									<h5 class="test-status text-fail">homePageNavigation</h5>
+									<span class='badge badge-success'>06.12.2020 18:40:34</span>
+									<span class='badge badge-danger'>06.12.2020 18:41:04</span>
+									<span class='badge badge-default'>0h 0m 30s+188ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -160,51 +160,14 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>22:31:13</td>
+				<td>18:41:04</td>
 				<td>
-						<textarea disabled class="code-block">cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='navbar-current-user']"}
-  (Session info: chrome=83.0.4103.61)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+						<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=unknownProtocolFound&u=jdbc%3Amysql%3A//localhost%3A3306/QADemo&c=UTF-8&f=regular&d=Firefox%20doesn%E2%80%99t%20know%20how%20to%20open%20this%20address%2C%20because%20one%20of%20the%20following%20protocols%20%28jdbc%29%20isn%E2%80%99t%20associated%20with%20any%20program%20or%20is%20not%20allowed%20in%20this%20context.
 Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
 System info: host: 'lerato-ThinkPad-T540p', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.3.0-53-generic', java.version: '11.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.GitB9K}, goog:chromeOptions: {debuggerAddress: localhost:39347}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e6ca6559b8f7349203bc8466f77f6197
-*** Element info: {Using=xpath, value=//span[@class='navbar-current-user']}
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:588)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='navbar-current-user']"}
-  (Session info: chrome=83.0.4103.61)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'lerato-ThinkPad-T540p', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.3.0-53-generic', java.version: '11.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.GitB9K}, goog:chromeOptions: {debuggerAddress: localhost:39347}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e6ca6559b8f7349203bc8466f77f6197
-*** Element info: {Using=xpath, value=//span[@class='navbar-current-user']}
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429185419, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 17152, moz:profile: /tmp/rust_mozprofileVII0kF, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 5.3.0-53-generic, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 07c6a598-4c4c-44ea-b002-9ab7ce3282a9
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -215,35 +178,23 @@ Session ID: e6ca6559b8f7349203bc8466f77f6197
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at pageObject.UserHomePage.getNavUserName(UserHomePage.java:18)
-	at stepDefinations.LoginDefination.varify_that_a_user_has_succesfully_logged_in(LoginDefination.java:78)
-	at ✽.Then Varify that a user has succesfully logged in(Login.feature:8)
-</textarea>
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>22:31:13</td>
-				<td>
-						<textarea disabled class="code-block">java.lang.NullPointerException
-	at com.TestFrame.suiteFull.Base.getScreenShotPath(Base.java:116)
-	at com.TestFrame.suiteFull.Listeners.onTestFailure(Listeners.java:64)
-	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:66)
-	at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:220)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:656)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.TestFrame.suiteFull.HomePage.homePageNavigation(HomePage.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
@@ -257,6 +208,197 @@ Session ID: e6ca6559b8f7349203bc8466f77f6197
 			</tr>
 	</tbody>
 </table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='/home/lerato/git/EndToEnd-TestFrameWork/suiteFull/reports/homePageNavigation.png' src='/home/lerato/git/EndToEnd-TestFrameWork/suiteFull/reports/homePageNavigation.png'>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="1"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">shouldAnswerWithTrue</p>
+							<p class="duration text-sm">0h 0m 0s+24ms</p>
+							<span class="datetime">18:40:34 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">shouldAnswerWithTrue</h5>
+									<span class='badge badge-success'>06.12.2020 18:40:34</span>
+									<span class='badge badge-danger'>06.12.2020 18:40:34</span>
+									<span class='badge badge-default'>0h 0m 0s+24ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:40:34</td>
+				<td>
+						Test has passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="3"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">TitleValidation</p>
+							<p class="duration text-sm">0h 0m 0s+0ms</p>
+							<span class="datetime">18:41:04 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">TitleValidation</h5>
+									<span class='badge badge-success'>06.12.2020 18:41:04</span>
+									<span class='badge badge-danger'>06.12.2020 18:41:04</span>
+									<span class='badge badge-default'>0h 0m 0s+0ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="test-item"  status="fail" test-id="4"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">homePageNavigation</p>
+							<p class="duration text-sm">0h 1m 0s+693ms</p>
+							<span class="datetime">18:41:05 PM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-fail">homePageNavigation</h5>
+									<span class='badge badge-success'>06.12.2020 18:41:05</span>
+									<span class='badge badge-danger'>06.12.2020 18:42:06</span>
+									<span class='badge badge-default'>0h 1m 0s+693ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>18:42:06</td>
+				<td>
+						<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: connection refused
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'lerato-ThinkPad-T540p', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.3.0-53-generic', java.version: '11.0.7'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+	at com.TestFrame.suiteFull.Base.browswerSelection(Base.java:96)
+	at com.TestFrame.suiteFull.Base.initializeDriver(Base.java:56)
+	at com.TestFrame.suiteFull.HomePage.homePageNavigation(HomePage.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</textarea>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='/home/lerato/git/EndToEnd-TestFrameWork/suiteFull/reports/homePageNavigation.png' src='/home/lerato/git/EndToEnd-TestFrameWork/suiteFull/reports/homePageNavigation.png'>
+	</ul>
 </div>
 					</div>
 				</li>
@@ -300,13 +442,13 @@ Session ID: e6ca6559b8f7349203bc8466f77f6197
 				<li class="test-item">
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">cucumber.runtime.CucumberException</p>
+							<p class="name">org.openqa.selenium.WebDriverException</p>
 							<p class="duration text-sm">1 tests</p>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="info">
-							<h4>cucumber.runtime.CucumberException</h4>
+							<h4>org.openqa.selenium.WebDriverException</h4>
 						</div>
 						<table class='table table-sm mt-4'>
 							<thead>
@@ -323,9 +465,9 @@ Session ID: e6ca6559b8f7349203bc8466f77f6197
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>22:29:45 PM</td>
-									<td class='linked' test-id='1'>
-										feature
+									<td>18:40:34 PM</td>
+									<td class='linked' test-id='2'>
+										homePageNavigation
 									</td>
 								</tr>
 							</tbody>
@@ -335,13 +477,13 @@ Session ID: e6ca6559b8f7349203bc8466f77f6197
 				<li class="test-item">
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">java.lang.NullPointerException</p>
+							<p class="name">org.openqa.selenium.TimeoutException</p>
 							<p class="duration text-sm">1 tests</p>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="info">
-							<h4>java.lang.NullPointerException</h4>
+							<h4>org.openqa.selenium.TimeoutException</h4>
 						</div>
 						<table class='table table-sm mt-4'>
 							<thead>
@@ -358,9 +500,9 @@ Session ID: e6ca6559b8f7349203bc8466f77f6197
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>22:29:45 PM</td>
-									<td class='linked' test-id='1'>
-										feature
+									<td>18:41:05 PM</td>
+									<td class='linked' test-id='4'>
+										homePageNavigation
 									</td>
 								</tr>
 							</tbody>
@@ -398,12 +540,12 @@ Session ID: e6ca6559b8f7349203bc8466f77f6197
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='0%'>
-						<b>0</b> tests passed
+					<div><small data-tooltip='50%'>
+						<b>2</b> tests passed
 						</small>
 					</div>
 					<div>
-						<small data-tooltip='100%'><b>1</b> tests failed, 
+						<small data-tooltip='50%'><b>2</b> tests failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -421,9 +563,9 @@ Session ID: e6ca6559b8f7349203bc8466f77f6197
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+					<div><small data-tooltip='33,333%'><b>1</b> events passed</small></div>
 					<div>
-						<small data-tooltip='100%'><b>2</b> events failed, 
+						<small data-tooltip='66,667%'><b>2</b> events failed, 
 						<b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -438,10 +580,10 @@ Session ID: e6ca6559b8f7349203bc8466f77f6197
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Tests</h6>
-							<h2 class="font-size-28 font-weight-light mt-3">1</h2>
+							<h2 class="font-size-28 font-weight-light mt-3">4</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>,00%</span>
+							<span>50,00%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -457,7 +599,7 @@ Session ID: e6ca6559b8f7349203bc8466f77f6197
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">Jun 11, 2020 10:29:44 PM</h4>
+							<h4 class="font-weight-light mt-4">Jun 12, 2020 06:40:34 PM</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -473,7 +615,7 @@ Session ID: e6ca6559b8f7349203bc8466f77f6197
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 1m 29s+262ms</h4>
+							<h4 class="font-weight-light mt-4">0h 1m 34s+47ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -526,14 +668,14 @@ Session ID: e6ca6559b8f7349203bc8466f77f6197
 </div>
 <script>
 	var statusGroup = {
-	    parentCount: 1,
-		passParent: 0,
-		failParent: 1,
+	    parentCount: 4,
+		passParent: 2,
+		failParent: 2,
 		fatalParent: 0,
 		errorParent: 0,
 		warningParent: 0,
 		skipParent: 0,
-		exceptionsParent: 1,
+		exceptionsParent: 2,
 		childCount: 0,
 		passChild: 0,
 		failChild: 0,
@@ -554,8 +696,8 @@ Session ID: e6ca6559b8f7349203bc8466f77f6197
 		infoGrandChild: 0,
 		debugGrandChild: 0,
 		exceptionsGrandChild: 0,
-		eventsCount: 2,
-		passEvents: 0,
+		eventsCount: 3,
+		passEvents: 1,
 		failEvents: 2,
 		fatalEvents: 0,
 		errorEvents: 0,
@@ -568,7 +710,7 @@ Session ID: e6ca6559b8f7349203bc8466f77f6197
 </script>
 <script>
 	var timeline = {
-	        "feature":88.555
+	        "homePageNavigation":30.188,"shouldAnswerWithTrue":0.024,"TitleValidation":0,"homePageNavigation":60.693
 	};
 </script>
                 </div>

@@ -45,11 +45,14 @@ public class ExtentReporterNg {
 			e.printStackTrace();
 		}
 		
-		reportName=System.getProperty("ReportName"); 
-		documentTitle=System.getProperty("DocumentTitle"); 
-		employeeTitle=System.getProperty("EmployeeTitle");
-		employeeName=System.getProperty("EmployeeName");
+		reportName=properties.getProperty("ReportName"); 
+		documentTitle=properties.getProperty("DocumentTitle"); 
+		employeeTitle=properties.getProperty("EmployeeTitle");
+		employeeName=properties.getProperty("EmployeeName");
 		
+		log.debug(reportName);
+		log.debug(documentTitle);
+		log.debug(employeeName);
 		String path = System.getProperty("user.dir")+"/reports/index.html";
 		ExtentSparkReporter reporter= new ExtentSparkReporter(path);
 		

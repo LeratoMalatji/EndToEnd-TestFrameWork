@@ -1,9 +1,21 @@
-22:30:16.356 [TestNG-tests-1] INFO  stepDefinations.LoginDefination - open browers navigating to url
-22:30:21.629 [TestNG-tests-1] INFO  stepDefinations.LoginDefination - clicked on login button
-22:30:23.698 [TestNG-tests-1] INFO  stepDefinations.LoginDefination - submitted login info
-22:30:33.735 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Resource File located
-22:30:59.371 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser chrome
-22:30:59.371 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
-22:30:59.484 [TestNG-tests-1] INFO  stepDefinations.LoginDefination - Initialazing driver in Login defination
-22:31:03.679 [TestNG-tests-1] INFO  stepDefinations.LoginDefination - open browers navigating to url
-22:31:03.714 [TestNG-tests-1] INFO  stepDefinations.LoginDefination - Title found on Homepage FEATURED COURSES Test passed
+18:39:11.141 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+18:39:11.141 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+18:39:13.617 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.ValidateTitle - Initializing browser
+18:39:16.643 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.ValidateTitle - Landing on url
+18:39:26.962 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Resource File located
+18:39:27.337 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.ValidateTitle - Closing the browser
+18:39:36.760 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser chrome
+18:39:36.790 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+18:40:34.014 [main] INFO  utility.ExtentReporterNg - located the externalReport.properties file
+18:40:34.016 [main] INFO  utility.ExtentReporterNg - File loaded into system
+18:40:34.016 [main] DEBUG utility.ExtentReporterNg - Web Automation Results
+18:40:34.016 [main] DEBUG utility.ExtentReporterNg - Test Results
+18:40:34.016 [main] DEBUG utility.ExtentReporterNg - Lerato Malatji
+18:40:34.405 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.Base - Resource File located
+18:40:34.477 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Resource File located
+18:40:59.515 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser firefox
+18:40:59.515 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser firefox
+18:40:59.529 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+18:40:59.529 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+18:41:00.111 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.ValidateTitle - Initializing browser
+18:41:05.892 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Resource File located
