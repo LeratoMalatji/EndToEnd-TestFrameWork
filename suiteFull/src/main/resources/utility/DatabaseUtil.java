@@ -28,7 +28,7 @@ public class DatabaseUtil {
 		
 		try {
 			input = new FileInputStream(new File(
-					System.getProperty("user.dir") + "/src/main/resources/com/TestFrame/suiteFull/data.properties"));
+					System.getProperty("user.dir") + "/src/main/resources/com/TestFrame/suiteFull/DataBaseData.properties"));
 			
 		} catch (FileNotFoundException e1) {
 			log.error("property file could not be be found ");

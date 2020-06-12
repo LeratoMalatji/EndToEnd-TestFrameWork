@@ -1,21 +1,19 @@
-18:39:11.141 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
-18:39:11.141 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
-18:39:13.617 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.ValidateTitle - Initializing browser
-18:39:16.643 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.ValidateTitle - Landing on url
-18:39:26.962 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Resource File located
-18:39:27.337 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.ValidateTitle - Closing the browser
-18:39:36.760 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser chrome
-18:39:36.790 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
-18:40:34.014 [main] INFO  utility.ExtentReporterNg - located the externalReport.properties file
-18:40:34.016 [main] INFO  utility.ExtentReporterNg - File loaded into system
-18:40:34.016 [main] DEBUG utility.ExtentReporterNg - Web Automation Results
-18:40:34.016 [main] DEBUG utility.ExtentReporterNg - Test Results
-18:40:34.016 [main] DEBUG utility.ExtentReporterNg - Lerato Malatji
-18:40:34.405 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.Base - Resource File located
-18:40:34.477 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Resource File located
-18:40:59.515 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser firefox
-18:40:59.515 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser firefox
-18:40:59.529 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
-18:40:59.529 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
-18:41:00.111 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.ValidateTitle - Initializing browser
-18:41:05.892 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Resource File located
+18:45:30.963 [main] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+18:45:31.192 [main] INFO  com.TestFrame.suiteFull.ValidateTitle - Initializing browser
+18:45:31.348 [main] INFO  com.TestFrame.suiteFull.ValidateTitle - Landing on url
+18:45:41.532 [main] INFO  com.TestFrame.suiteFull.ValidateTitle - Closing the browser
+18:47:03.673 [main] INFO  utility.ExtentReporterNg - located the externalReport.properties file
+18:47:03.676 [main] INFO  utility.ExtentReporterNg - File loaded into system
+18:47:03.676 [main] DEBUG utility.ExtentReporterNg - Web Automation Results
+18:47:03.676 [main] DEBUG utility.ExtentReporterNg - Test Results
+18:47:03.676 [main] DEBUG utility.ExtentReporterNg - Lerato Malatji
+18:47:04.014 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.Base - Resource File located
+18:47:04.034 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Resource File located
+18:47:05.378 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser chrome
+18:47:05.378 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+18:47:05.420 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Running on Test on browser chrome
+18:47:05.421 [TestNG-tests-1] INFO  com.TestFrame.suiteFull.Base - Maximizing browser
+18:47:05.543 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.ValidateTitle - Initializing browser
+18:47:21.622 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.ValidateTitle - Landing on url
+18:47:21.873 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.ValidateTitle - Title found on Homepage FEATURED COURSES Test passed
+18:47:21.875 [TestNG-tests-2] INFO  com.TestFrame.suiteFull.ValidateTitle - Closing the browser
