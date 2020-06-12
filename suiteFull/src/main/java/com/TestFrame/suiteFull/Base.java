@@ -18,6 +18,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 public class Base {
 
@@ -94,7 +95,7 @@ public class Base {
 			driver = new FirefoxDriver(option);
 			log.info("Running on Test on browser " + browserName);
 
-		} else if ("IE".equalsIgnoreCase("IE")) {
+		} else if ("IE".equalsIgnoreCase(browserName) || "IE".equalsIgnoreCase(browserName)) {
 
 			System.setProperty("webdriver.ie.driver",
 					systemPath + "/src/main/resources/browserDrivers/IEDriverServer.exe");
@@ -102,7 +103,15 @@ public class Base {
 
 			log.info("Running on Test on browser " + browserName);
 
-		} else {
+		}else if ("safari".equalsIgnoreCase(browserName))
+		{
+			
+			 driver = new SafariDriver();
+			 log.info("Running on Test on browser " + browserName);
+			
+		}
+		
+		else {
 
 			log.fatal("Something went wrong with the browswer");
 			throw new RuntimeException("No such driver/browser name found");
