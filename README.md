@@ -1,5 +1,5 @@
 # EndToEnd-TestFrameWork
-This is a web based application automation hybrid framework using Selenium
+This is a web based application automation hybrid framework using Selenium.
 
 ## Constructed with The following Technologies
 * JAVA 8
@@ -10,6 +10,18 @@ This is a web based application automation hybrid framework using Selenium
 * Log4j
 * Cucumber
 * Selenium
+
+If used with with with a CI tool like Jenkins  you could paramiterize your Job with to run on different browsers.
+
+ BrowerNames
+ 
+  -chrome
+  -firefox
+  -safari
+  -chromeheadless
+  -firefoxheadless
+  -IE
+  
 
 ## Navigating file structure
   * ### SuiteFull
@@ -91,7 +103,7 @@ This is a web based application automation hybrid framework using Selenium
       * #### Test-output
    *  pom.xml
    
-         pom is also where testNg is also set up to intergrate with maven ,currently set up to execute both testNg and     Cumcumber TestNg.xml
+         pom is also where testNg is also set up to intergrate with maven ,currently set up to execute both testNg and     Cumcumber TestNg.xml . Remove <suiteXmlFile>testngCucumber.xml</suiteXmlFile> tag to exclude your cucumber testcases from mvn excution
         
         ```bash
          <configuration>
