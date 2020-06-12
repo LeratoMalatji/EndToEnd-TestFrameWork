@@ -18,6 +18,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.safari.SafariDriver;
 
 public class Base {
@@ -95,18 +96,19 @@ public class Base {
 			driver = new FirefoxDriver(option);
 			log.info("Running on Test on browser " + browserName);
 
-		} else if ("IE".equalsIgnoreCase(browserName) || "IE".equalsIgnoreCase(browserName)) {
-
+		} else if ("IE".equalsIgnoreCase(browserName)) {
+				
+			 InternetExplorerOptions option =new InternetExplorerOptions();
 			System.setProperty("webdriver.ie.driver",
 					systemPath + "/src/main/resources/browserDrivers/IEDriverServer.exe");
+			
 			driver = new InternetExplorerDriver();
 
 			log.info("Running on Test on browser " + browserName);
 
 		}else if ("safari".equalsIgnoreCase(browserName))
 		{
-			//Not yet tested 
-			
+		
 			 driver = new SafariDriver();
 			 log.info("Running on Test on browser " + browserName);
 			
